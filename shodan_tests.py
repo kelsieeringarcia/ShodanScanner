@@ -1,10 +1,19 @@
 # import statements
+import json
 from ShodanClient import ShodanClient
 
-# TODO read config json file
-#1. Provide file location/path
+def load_config():
+    file_path = "config.default.json"
+    with open(file_path) as file:
+        data = json.load(file)
+    return data
 
-#2. Read the file and load it into a Dictionary variable type
-    # Hint: Google how to read json file into python dictionary. You might use a python module (library)
-key = None
-client = ShodanClient(api_key=key)
+def main():
+
+    data = load_config()
+
+    client = ShodanClient(api_key=data["api_keys"]["shodan"]["key"])
+
+
+if __name__ == "__main__":
+    main()

@@ -3,6 +3,16 @@
 ## Objective:
 Build a Python CLI tool that interacts with the Shodan free API (using the requests library) to retrieve and display information about internet-connected devices. The project will reinforce API interaction, JSON parsing, error handling, and basic object-oriented design principles.
 
+## Folder Structure
+
+- ShodanClient.py
+
+This should be a client that uses the Python Requests library to avoid relying on SDKs (less dependecy vulnerabilities): https://pypi.org/project/requests/
+
+- shodan_tests.py
+
+This will be where we write unit tests to make sure our ShodanClient.py is functioning correctly.
+
 ### Project Use Cases (CLI Tool)
 
 - Use Case 1: Basic Search Query

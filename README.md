@@ -48,3 +48,7 @@ Inform the user if the API key is invalid, rate-limited, or if no results are fo
 - Use Case 7: Summary Statistics
 
 After a search, display a summary: how many results, top ports, and most common ISPs.
+
+## Resources and documentation
+
+Shodan API: https://developer.shodan.io/api
